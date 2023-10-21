@@ -1,6 +1,6 @@
 package org.mletkin.java17.rec.distance;
 
-public record Meter(double dist) {
+public record Meter(double dist) implements Distance {
 
     public Kilometer toKilometer() {
         return new Kilometer(dist / 1000);
